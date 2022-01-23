@@ -10,13 +10,13 @@ import requests
 import random
 import enchant #pip install pyenchant
 
-class colors:
+class colors: # Pascal case for class name
     GREEN = '\033[92m'
     YELLOW = '\033[93m'
     NORMAL = '\033[0m'
     MAGENTA = '\u001b[935m'
 
-dict = enchant.Dict("en_US")
+dict = enchant.Dict("en_US") # name `dict` is already used for built-in class, consider using other other name
 
 def is_valid(guess, word):
     if len(guess) != len(word):
